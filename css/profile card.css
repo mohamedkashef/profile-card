@@ -1,0 +1,174 @@
+body
+{
+    box-sizing: border-box; /*box-sizing box-sizing box-sizing box-sizing box-sizing box-sizing*/
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+
+}
+
+.idcard
+{
+   max-width: 370px;
+   width: 100%; 
+   
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: #fff;
+   box-shadow: 0px 5px 20px rgb(0, 0, 0, 0.1);
+   border-radius: 24px;
+   padding: 25px;
+   position: relative;
+  
+
+}
+
+.idcard::before
+{
+    content: "";
+    position: absolute;
+    height: 36%;
+    width: 100%;
+    background-color: #4070f4;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    border-radius: 24px 24px 0 0;
+}
+
+
+.image
+{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 255, 0);
+    border: solid #4070f4;
+    margin-bottom: 10px;
+   
+    
+}
+
+.profile-img
+{
+    height: 96%;
+    width: 96%;
+    object-fit: cover; /*object-fit object-fit object-fit object-fit*/
+    border: 3px white solid;
+    border-radius: 50%;
+    background-color: #c0d6fff8;
+    
+    
+    
+    
+    
+
+}
+ .profile-img:hover
+ {
+    box-shadow: 0px 0px 30px rgb(33, 6, 99);
+    
+    
+ }
+
+.text-data
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.idcard .text-data .name
+{
+    font-size: 22px;
+    font-weight: 500; /*font-weight font-weight font-weight font-weight */
+    transition: 1s;
+}
+
+.idcard .text-data .name:hover
+{
+    color: gold;
+    cursor: default;
+}
+
+
+.idcard .text-data .job
+{
+    font-size: 15px;
+    font-weight: 500; /*font-weight font-weight font-weight font-weight */
+}
+.idcard .media-button
+{
+    display: flex;
+    list-style: none;
+    
+    align-items: center;
+    margin-top: 15px;
+}
+
+
+
+.idcard .media-button a
+{
+    background-color: aqua;
+    height: 34px;
+    width: 34px;
+    margin: 0 10px;
+    border-radius: 50%;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: #fff;
+    font-size: 20px;
+    transition: 1s;
+
+
+
+}
+
+a:hover
+{
+    transform: rotate(360deg);
+}
+
+.idcard  .btn
+{
+   display: flex;
+   
+   
+   margin-top: 20px;
+}
+
+.idcard .btn .button 
+{
+    margin: 0 10px;
+    padding: 8px 24px 10px;
+    background-color: rgba(22, 64, 255, 0.795);
+    border-radius: 24px;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    font-family: cursive;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+
+.idcard .btn .button:hover 
+{
+    background: #0e4bf1;
+    font-size: 17px;
+    
+
+}
