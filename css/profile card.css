@@ -16,8 +16,9 @@ body
 
 .idcard
 {
-   max-width: 370px;
+   max-width: 320px;
    width: 100%; 
+   height: 60vh;
    
    display: flex;
    flex-direction: column;
@@ -31,12 +32,18 @@ body
 
 }
 
+#fuld:hover{
+    font-size: 18px;
+    transition: 1s;
+}
+
 .idcard::before
 {
     content: "";
     position: absolute;
-    height: 36%;
+    height: 25%;
     width: 100%;
+    background-image: url();
     background-color: #4070f4;
     top: 0;
     left: 0;
@@ -48,12 +55,13 @@ body
 .image
 {
     position: relative;
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
     border-radius: 50%;
     background-color: rgba(0, 0, 255, 0);
     border: solid #4070f4;
     margin-bottom: 10px;
+    margin-top: 10px;
    
     
 }
@@ -61,7 +69,7 @@ body
 .profile-img
 {
     height: 96%;
-    width: 96%;
+    width: 94%;
     object-fit: cover; /*object-fit object-fit object-fit object-fit*/
     border: 3px white solid;
     border-radius: 50%;
@@ -91,13 +99,25 @@ body
 {
     font-size: 22px;
     font-weight: 500; /*font-weight font-weight font-weight font-weight */
-    transition: 1s;
+    transition: .5s;
+    margin-bottom: 10px;
+    color: #0044ff;
+}
+.job{
+    margin-bottom: 10px;
+}
+
+.job{
+    color: #027916;
+    font-size: 20px;
 }
 
 .idcard .text-data .name:hover
 {
-    color: gold;
+    color: rgb(0, 47, 255);
     cursor: default;
+
+    font-size: 25px;
 }
 
 
@@ -113,6 +133,7 @@ body
     
     align-items: center;
     margin-top: 15px;
+    
 }
 
 
@@ -162,13 +183,14 @@ a:hover
     font-weight: 400;
     cursor: pointer;
     transition: all .5s ease;
+    margin-bottom: 15px;
 }
 
 
 .idcard .btn .button:hover 
 {
-    background: #0e4bf1;
-    font-size: 17px;
+    background: #4d3c97;
+    box-shadow: 0px 0px 10px 5px rgb(121, 91, 250);
     
 
 }
